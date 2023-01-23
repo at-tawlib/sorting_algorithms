@@ -16,7 +16,6 @@ void insertion_sort_list(listint_t **list)
 	{
 		temp = iter->next;
 		node = iter->prev;
-		printf("node : %d, prev : %d, next : %d\n", iter->n, node->n, temp->n);
 		while (node != NULL && iter->n < node->n)
 		{
 			swap_nodes(list, &node, iter);
